@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ice Things Up</title> 
+
+            <!-- CSS of Navigation Bar -->
+            <style type="text/css">
+                *{
+                    margin: 0px; padding: 0px; box-sizing: border-box; font-family: "Poppins", sans-serif; font-weight: bold;
+                }
+                nav{
+                    width: 100%; height: 75px; background: linear-gradient(135deg, #71b7e6, #FFB3C6); line-height: 75px; padding: 0px 100px; position: fixed; z-index: 1;  
+                }
+                nav .logo{
+                    font-size: 30px; font-weight: bold; letter-spacing: 3px;
+                }
+                nav .logo p{
+                    float: left; color: #fff; text-transform: uppercase;
+                }
+                nav ul{
+                    float: right;
+                }
+                nav ul li{
+                    display: inline-block; list-style: none;
+                } 
+            </style>
+
+            <!-- CSS of Scrollbar Menu -->
+            <style>
+                @import "https://unpkg.com/open-props";
+                @import "https://unpkg.com/open-props/normalize.min.css";
+                .media-scroller {
+                  --_spacer: var(--size-3); display: grid; gap: var(--_spacer); grid-auto-flow: column; grid-auto-columns: 21%;
+                  padding: 0 var(--_spacer) var(--_spacer); overflow-x: auto;overscroll-behavior-inline: contain;
+                }
+                .media-scroller--with-groups {
+                  grid-auto-columns: 80%;
+                }
+                .media-group {
+                  display: grid; gap: var(--_spacer); grid-auto-flow: column;
+                }
+                .media-element {
+                  display: grid; grid-template-rows: min-content; gap: var(--_spacer); padding: var(--_spacer);
+                  background: var(--surface-2); border-radius: var(--radius-2); box-shadow: var(--shadow-2);
+                }
+                .media-element > img {
+                  inline-size: 100%; aspect-ratio: 16 / 9; object-fit: cover;
+                }
+                .snaps-inline {
+                  scroll-snap-type: inline mandatory; scroll-padding-inline: var(--_spacer, 1rem);
+                }
+                .snaps-inline > * {
+                  scroll-snap-align: start;
+                }
+                /* general styling */
+                .container {
+                  inline-size: min(100% - 4rem, 70rem); margin-inline: auto;
+                }
+                .flow {
+                  display: grid; gap: var(--size-3);
+                }
+                .page-header {
+                  padding-block: var(--size-9); margin-block-end: var(--size-9); background: var(--gradient-16);
+                  color: var(--gray-0); box-shadow: var(--shadow-2);
+                }
+                .page-title {
+                  font-size: var(--font-size-fluid-3);
+                }
+                .page-subtitle {
+                  font-size: var(--font-size-fluid-1);
+                }
+                .section-title {
+                  padding-inline-start: var(--size-6); margin-block: var(--size-9) var(--size-3);
+                }
+            </style>
+    </head>
+
+
+    <body>
+      
+            <!-- Navigation Bar -->
+            <nav>
+              <div class="logo">
+              <p>Ice Things Up</p>
+              </div>
+              <ul>
+                  <li><a id="home">Home</a></li>
+                  <li><a id="shop">Shop</a></li>
+                  <li><a id="us">Us</a></li>
+                  <li><a id="feedback">Feedback</a></li>
+              </ul></nav>
+             
+              <script>
+                    a=document.getElementById('home')
+                    a.href="http://localhost/website/home.html" 
+
+                     a=document.getElementById('shop')
+                    a.href="http://localhost/website/shop.html" 
+                    
+                    a=document.getElementById('us')
+                    a.href="http://localhost/website/us.html"
+                    
+                    a=document.getElementById('feedback')
+                    a.href="http://localhost/website/form.html"
+            </script>
+          
+    
+            <!-- First Pic -->
+            <img src="bg.jpg" width="100%">
+      
+        
+            <!-- Menu -->
+            <br> <br>
+            <div class="media-scroller snaps-inline">
+                <div class="media-element">
+                  <img src="oreo.jpg" alt="">
+                  <p class="title"><center>Oreo Vanilla Bingsu</center></p>
+                </div>
+                <div class="media-element">
+                  <img src="straw.jpg" alt="">
+                  <p class="title"><center>Strawberry Banana Bingsu</center></p>
+                </div>
+                <div class="media-element">
+                  <img src="graham.jpg" alt="">
+                  <p class="title"><center>Mango Graham Bingsu</center></p>
+                </div>
+                <div class="media-element">
+                  <img src="mcrepe.jpg" alt="">
+                  <p class="title"><center>Mango Crepe</center></p>
+                </div>
+                <div class="media-element">
+                  <img src="screpe.jpg" alt="">
+                  <p class="title"><center>Strawberry Crepe</center></p>
+                </div>
+              </div>
+           
+
+            <!-- Second Pic -->
+            <img src="announce.png" width="100%">
+
+
+            <!-- Maps -->
+            <br> <br>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.3779857868008!2d121.55125281475331!3d14.113854790113965!2m3!1f0!2f0!3f0!
+              3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd53f612f392b3%3A0x364c152036919e85!2sR.%20Villase%C3%B1or%2C%20Lucban%2C%20Quezon!5e0!3m2!1sen!2sph!4v1681032245152!5m2!1sen!2sph" 
+              width="1600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+
+            
+
+    </body>
+
+</html>

@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Shop</title> 
+
+            <!-- CSS of Navigation Bar -->
+            <style type="text/css">
+                *{
+                    margin: 0px; padding: 0px; box-sizing: border-box; font-family: "Poppins", sans-serif; 
+                }
+                nav{
+                    width: 100%; height: 75px; background: linear-gradient(135deg, #71b7e6, #FFB3C6); line-height: 75px; padding: 0px 100px; position: fixed; z-index: 1;  
+                }
+                nav .logo{
+                    font-size: 17.5px; font-weight: bold; letter-spacing: 3px;
+                }
+                nav .logo p{
+                    float: left; color: #fff; text-transform: uppercase;
+                }
+                nav ul{
+                    float: right;
+                }
+                nav ul li{
+                    display: inline-block; list-style: none;
+                } 
+            </style>
+
+
+        <!-- CSS of Menu -->
+        <style>
+            img{
+                width: 400px; height: 400px;
+            }
+            #menu1{
+                float: left; padding-left: 320px; 
+            }
+            #menu2{
+                float: right; padding-right: 320px;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+
+          <!-- Navigation Bar -->
+          <nav>
+            <div class="logo">
+            <p>Ice Things Up</p>
+            </div>
+            <ul>
+                <li><a id="home">Home</a></li>
+                  <li><a id="shop">Shop</a></li>
+                  <li><a id="us">Us</a></li>
+                  <li><a id="feedback">Feedback</a></li>
+              </ul></nav>
+             
+              <script>
+                    a=document.getElementById('home')
+                    a.href="http://localhost/website/home.html" 
+
+                     a=document.getElementById('shop')
+                    a.href="http://localhost/website/shop.html" 
+                    
+                    a=document.getElementById('us')
+                    a.href="http://localhost/website/us.html"
+                    
+                    a=document.getElementById('feedback')
+                    a.href="http://localhost/website/form.html"
+            </script>
+
+
+         <!-- Menu --> 
+        <br><br><br><br><br><br>
+        <section>
+            <div id="menu1">
+            <img src="menu1.jpg">
+            <h4><center><br>Oreo Vanilla Bingsu</center></h4>
+            <center><p>_____</p></center>
+            <center><p><br>₱ 90.00</p></center>
+            <br><br><br>
+            </div>
+
+            <div id="menu2">
+            <img src="menu2.jpg">
+            <h4><center><br>Strawberry Banana Bingsu</center></h4>
+            <center><p>_____</p></center>
+            <center><p><br>₱ 90.00</p></center>
+            <br><br><br>
+            </div>
+
+            <div id="menu1">
+            <img src="menu3.jpg">
+            <h4><center><br>Mango Graham Bingsu</center></h4>
+            <center><p>_____</p></center>
+            <center><p><br>₱ 90.00</p></center>
+            <br><br><br>
+            </div>
+
+            <div id="menu2">
+            <img src="menu4.jpg">
+            <h4><center><br>Mango Crepe</center></h4>
+            <center><p>_____</p></center>
+            <center><p><br>₱ 70.00</p></center>
+            <br><br><br>
+            </div>
+
+            <div id="menu1">
+            <img src="menu5.jpg">
+            <h4><center><br>Strawberry Crepe</center></h4>
+            <center><p>_____</p></center>
+            <center><p><br>₱ 70.00</p></center>
+            <br><br><br>
+            </div>
+
+        </section>
+    </body>
+</html>
